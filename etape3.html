@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Design</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        body {
+            /* border: 10px solid olive; */
+            /* margin: haut droite bas gauche */
+            /* margin: 10px 0px 10px 0px; */
+            margin: 10px 0;
+
+            /* text align sert à centrer le TEXTE */
+            text-align: center;
+            /* typo taille en .em et famille propriété raccourcie           */
+            font: 0.8em "Trebuchet MS", Helvetica, sans-serif;
+            background:#cf9;
+        }
+
+        /* L'id conteneur ici il est affecté à une div de la page. La notation div#conteneur ou #conteneur est identique */
+        div#conteneur {
+            margin: 0 auto;
+            width: 770px;
+            border: 2px solid #ab4;
+            /* en haxadécimal il éxiste 16 millions de couleurs */
+            background: #fff;
+            text-align: left;
+        }
+
+        h1#header{
+            height: 258px;
+            /* Une image en arrière plan dans le css */
+            /* background-image: url(img/apple.jpg);
+            background-repeat: no-repeat;
+            background-position-x: left;
+            background-position-y: top; */
+            background: url(img/apple.jpg) no-repeat left top;
+        }
+
+        div#contenu {
+            padding: 0 30px 0 100px;
+        }
+
+        div#contenu h2 {
+            padding-left: 25px;
+            background: url(img/little_apple.gif) no-repeat left bottom;
+            color: #9b2;
+            border-bottom: 1px solid #99bb22;
+            /* interlignage */
+            line-height: 25px;
+            font-size: 1.4em;
+        }
+
+        div#contenu h3 {
+            margin-left: 15px;
+            padding-left: 5px;
+            border-bottom: 1px solid #9b2;
+            border-left: 3px solid #9b2;
+            color: #9b2;
+        }
+
+        div#contenu blockquote {
+            border-left: 5px solid #9b2;
+            padding-left: 1.7em;
+
+        }
+
+        .texte-a-droite {
+            text-align: right;
+            color: #9b2;
+        }
+
+        div#contenu a{
+            color: #9b2;
+        }
+
+        div#contenu a:hover {
+            color: #9b2;
+        }
+
+        p#footer {
+            margin: 0;
+            padding-left: 10px;
+            line-height: 30px;
+            text-align: right;
+            color: #9b2;
+        }
+
+
+    </style>
+</head>
+<!-- IL N'Y A JAMAIS RIEN ENTRE HEAD ET BODY -->
+<body>
+    <!-- Le contenu principal >>> souvent nomé id="main" ou id="conteneur" ou id="container" ou id="wrapper" -->
+    <div id="conteneur">
+        <h1 id="header"><a href="#" title="Accueil-Color Design"><span>Colored Design</span></a></h1>
+        <!-- ici la navigation -->
+        <nav>
+            <ul id="menu">
+                <li><a href="#">Etape n°1</a></li>
+                <li><a href="#">Etape n°2</a></li>
+                <li><a href="#">Etape n°3</a></li>
+                <li><a href="#">Etape n°4</a></li>
+                <li><a href="#">Etape n°5</a></li>
+            </ul>
+        </nav>
+        <!-- une seconde div pour le contenu apres l'en-ête de la page -->
+        <div id="contenu">
+        <h2>Un titre</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam nesciunt odit nemo natus fuga laudantium, non, optio praesentium et labore sunt voluptatibus fugiat at similique temporibus dolores maxime? Quas, nisi.</p>
+        <blockquote>
+            <p>Pom Pom Pom Pom</p>
+            <p class="texte-a-droite"></p>
+        </blockquote>
+        <p>Dolore alias at eligendi nam quo optio repudiandae voluptas facilis temporibus. Voluptates cumque earum quae amet nostrum odit, ab mollitia nihil incidunt est nulla veritatis aperiam ratione error fugiat dolorem.</p>
+        <h3>Les bonnes pommes font le bon cidre</h3>
+        <p>Ipsam omnis aspernatur odio voluptatibus, exercitationem ipsa odit magnam ipsum iure soluta velit harum maxime rerum quidem nihil illo voluptatum? Ea optio doloremque dolorem nostrum repellat, recusandae cumque soluta cum!</p>
+        </div> <!-- fermeture de contenu -->
+        <!-- ici le pied de page avec une id footer -->
+        <p id="footer">Pied de page</p>
+    </div> <!-- fermeture de conteneur
+     -->
+</body>
+</html>
